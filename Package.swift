@@ -9,10 +9,23 @@ let package = Package(
         .iOS(.v11)
     ],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
+        // Keep the default SnapSDK product minimal for Camera Kit users.
         .library(
             name: "SnapSDK",
-            targets: ["SCSDKCoreKit", "SCSDKLoginKit", "SCSDKCreativeKit"])
+            targets: ["SCSDKCoreKit"]
+        ),
+        .library(
+            name: "SnapSDKLoginKit",
+            targets: ["SCSDKCoreKit", "SCSDKLoginKit"]
+        ),
+        .library(
+            name: "SnapSDKCreativeKit",
+            targets: ["SCSDKCoreKit", "SCSDKCreativeKit"]
+        ),
+        .library(
+            name: "SnapSDKAll",
+            targets: ["SCSDKCoreKit", "SCSDKLoginKit", "SCSDKCreativeKit"]
+        )
     ],
     targets: [
         .binaryTarget(
