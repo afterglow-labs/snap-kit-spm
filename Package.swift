@@ -12,12 +12,28 @@ let package = Package(
         .library(
             name: "SnapSDK",
             targets: ["SCSDKCoreKit"]
+        ),
+        .library(
+            name: "SnapSDKLoginKit",
+            targets: ["SCSDKCoreKit", "SCSDKLoginKit"]
+        ),
+        .library(
+            name: "SnapSDKCreativeKit",
+            targets: ["SCSDKCoreKit", "SCSDKCreativeKit"]
         )
     ],
     targets: [
         .binaryTarget(
             name: "SCSDKCoreKit",
             path: "SCSDKCoreKit.xcframework"
+        ),
+        .binaryTarget(
+            name: "SCSDKLoginKit",
+            path: "SCSDKLoginKit.xcframework"
+        ),
+        .binaryTarget(
+            name: "SCSDKCreativeKit",
+            path: "SCSDKCreativeKit.xcframework"
         ),
     ]
 )
