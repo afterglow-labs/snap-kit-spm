@@ -18,13 +18,9 @@ https://github.com/afterglow-labs/snap-kit-spm
 
 Then, select **Add Package**.
 
-### Choosing Products
+### Core-Only Product
 
-This fork exposes Snap Kit as separate Swift Package products so apps only link
-the modules they use:
+This fork exposes only the Snap Kit Core SDK:
 
 - `SnapSDK`: Core SDK only. Use this for Camera Kit integrations that only need
   `SCSDKCoreKit`.
-- `SnapSDKLoginKit`: Core SDK plus Login Kit.
-- `SnapSDKCreativeKit`: Core SDK plus Creative Kit.
-- `SnapSDKAll`: Core SDK, Login Kit, and Creative Kit.
