@@ -16,10 +16,6 @@ let package = Package(
         .library(
             name: "SnapSDKLoginKit",
             targets: ["SCSDKCoreKit", "SCSDKLoginKit"]
-        ),
-        .library(
-            name: "SnapSDKCreativeKit",
-            targets: ["SCSDKCoreKit", "SCSDKCreativeKit"]
         )
     ],
     targets: [
@@ -30,10 +26,6 @@ let package = Package(
         .binaryTarget(
             name: "SCSDKLoginKit",
             path: "SCSDKLoginKit.xcframework"
-        ),
-        .binaryTarget(
-            name: "SCSDKCreativeKit",
-            path: "SCSDKCreativeKit.xcframework"
         ),
     ]
 )
