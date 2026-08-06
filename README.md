@@ -18,9 +18,12 @@ https://github.com/afterglow-labs/snap-kit-spm
 
 Then, select **Add Package**.
 
-### Core-Only Product
+### Products
 
-This fork exposes only the Snap Kit Core SDK:
+This fork exposes only the Snap Kit products used by the Camera Kit integration:
 
-- `SnapSDK`: Core SDK only. Use this for Camera Kit integrations that only need
-  `SCSDKCoreKit`.
+- `SnapSDK`: Core SDK only.
+- `SnapSDKLoginKit`: Core and Login Kit, used by Camera Kit's optional
+  Push-to-Device authentication provider.
+
+Creative Kit is intentionally excluded.
